@@ -1,0 +1,30 @@
+{
+  "name": "attempt-promise",
+  "version": "1.0.0",
+  "description": "Promise wrapper for attempt",
+  "main": "index.js",
+  "scripts": {
+    "test": "NODE_ENV=test jshint test/ *.js && istanbul cover -i '*.js' _mocha -- -u exports -R spec 'test/**/*.test.js'",
+    "watch": "mocha --watch 'test/**/*.js' --timeout 500",
+    "release": "npm test && release-it -n -i patch",
+    "release:minor": "npm test && release-it -n -i minor",
+    "release:major": "npm test && release-it -n -i major"
+  },
+  "keywords": [
+    "attempt",
+    "promise"
+  ],
+  "author": "Martin Jonsson <martin.jonsson@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "attempt": "^1.0.1",
+    "bluebird": "^2.10.2"
+  },
+  "devDependencies": {
+    "istanbul": "^0.4.1",
+    "jshint": "^2.8.0",
+    "mocha": "^2.3.4",
+    "release-it": "^2.3.1",
+    "should": "^7.1.1"
+  }
+}
