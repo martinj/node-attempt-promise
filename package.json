@@ -22,13 +22,13 @@
   "license": "MIT",
   "dependencies": {
     "attempt": "^1.0.1",
-    "bluebird": "^2.10.2"
+    "bluebird": "^3.3.4"
   },
   "devDependencies": {
     "istanbul": "^0.4.1",
     "jshint": "^2.8.0",
     "mocha": "^2.3.4",
     "release-it": "^2.3.1",
-    "should": "^7.1.1"
+    "should": "^8.3.0"
   }
 }
