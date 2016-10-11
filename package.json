@@ -25,10 +25,10 @@
     "bluebird": "^3.3.4"
   },
   "devDependencies": {
-    "istanbul": "^0.4.1",
-    "jshint": "^2.8.0",
-    "mocha": "^2.3.4",
-    "release-it": "^2.3.1",
-    "should": "^8.3.0"
+    "istanbul": "^0.4.5",
+    "jshint": "^2.9.3",
+    "mocha": "^3.1.2",
+    "release-it": "^2.4.3",
+    "should": "^11.1.1"
   }
 }
