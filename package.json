@@ -4,7 +4,7 @@
   "description": "Promise wrapper for attempt",
   "main": "index.js",
   "scripts": {
-    "test": "NODE_ENV=test jshint test/ *.js && istanbul cover -i '*.js' _mocha -- -u exports -R spec 'test/**/*.test.js'",
+    "test": "NODE_ENV=test eslint test/ *.js && istanbul cover -i '*.js' _mocha -- -u exports -R spec 'test/**/*.test.js'",
     "watch": "mocha --watch 'test/**/*.js' --timeout 500",
     "release": "npm test && release-it -n -i patch",
     "release:minor": "npm test && release-it -n -i minor",
@@ -21,12 +21,11 @@
   "author": "Martin Jonsson <martin.jonsson@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "attempt": "^1.0.1",
-    "bluebird": "^3.3.4"
+    "attempt": "^1.0.1"
   },
   "devDependencies": {
+    "eslint": "^9.30.1",
     "istanbul": "^0.4.5",
-    "jshint": "^2.9.3",
     "mocha": "^3.1.2",
     "release-it": "^2.4.3",
     "should": "^11.1.1"

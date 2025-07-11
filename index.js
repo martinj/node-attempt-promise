@@ -1,6 +1,5 @@
 'use strict';
 var attempt = require('attempt');
-var Promise = require('bluebird');
 
 module.exports = function (opts, fn) {
 	if (!fn) {
@@ -11,7 +10,7 @@ module.exports = function (opts, fn) {
 	return new Promise(function (resolve, reject) {
 		attempt(
 			opts,
-			function (attempts) {
+			function () {
 				var next = this;
 				var p = fn(next);
 				if (p && typeof p.then === 'function') {
