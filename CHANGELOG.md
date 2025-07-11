@@ -1,5 +1,9 @@
 # Changelog
 
+## 3.0.0
+
+- Remove bluebird, returned promise is using native Promise instead.
+
 ## 2.0.1
 
 - Remove shrinkwrap.
